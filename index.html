@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/style.min.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<form name="form">
+			<input
+				type="text"
+				name="input1"
+			/>
+			<input
+				type="text"
+				name="input2"
+			/>
+			<button
+				name="btn"
+				type="button"
+			>
+				Swap
+			</button>
+		</form>
+
+		<form name="myForm">
+			<label for="myInput">Введіть текст:</label>
+			<input
+				type="text"
+				id="myInput"
+				name="myInput"
+			/>
+			<br /><br />
+			<button
+				type="button"
+				onclick="blockInput()"
+			>
+				Заблокувати
+			</button>
+			<button
+				type="button"
+				onclick="unblockInput()"
+			>
+				Розблокувати
+			</button>
+		</form>
+
+		<form name="form_link">
+			<input
+				type="text"
+				name="input"
+			/>
+			<a
+				href="https://www.youtube.com/watch?v=OtJkXuqyjkk&list=PLRD56Ql8zouzzCQWIwysCdq8UvC6LmCYh&index=16"
+				>Click here</a
+			>
+		</form>
+
+		<form name="form_count">
+			<textarea name="textarea"></textarea>
+			<button name="btn" type="button">Statistics</button>
+		</form>
+		<div id="stats">
+			Spaces: 0<br>
+			Consonants: 0<br>
+			Vowels: 0
+		</div>
+		
+
+		<form name="form_image">
+			<input type="file" name="file" accept="image/*">
+			<button id="upload-btn" name="btn" type="button">Завантажити зображення</button>
+		</form>
+		<div id="image-container">
+		</div>
+		<button id="remove-btn" style="display: none;">Remove image</button>
+		<div id="message"></div>
+		<script src="script.js"></script>
+	</body>
+</html>
